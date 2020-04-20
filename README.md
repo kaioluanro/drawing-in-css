@@ -10,9 +10,12 @@
 
 #
 
-## Batman Simbol in CSS
+## 01-Batman Simbol in CSS
 
 ![batman](./01-batman-simbol/batman.png)
 
 #
 
+## 02-Koala in CSS
+
+![koala](./02-draw-koala/02-koala.png)

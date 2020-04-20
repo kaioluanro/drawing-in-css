@@ -1,0 +1,168 @@
+$borderBox:false;
+$widthBox:600px;
+$heightBox:420px;
+
+/* Colors */
+$bg:#25a9fc;
+$fontColor:#FFF;
+$koalaColor:#A6BECF;
+$earInnerColor:#819CAF;
+$eyeColor:#FFF;
+$pupilColor:#27354A;
+$noseColor:#BE845F;
+
+body{
+  background: {
+    color:$bg;
+  };
+}
+
+.title{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  
+
+}
+
+ h1{
+   font: {
+      size:60px;
+      weight:900;
+      family:'Serge IU','Roboto';
+    };
+   color:$fontColor;
+ }
+
+.box{
+  position:relative;
+  margin:auto;
+  display:block;
+  margin: {
+    top:8%;
+  };
+  height:$heightBox;
+  width:$widthBox;
+  background:none;
+  
+  @if($borderBox == true){
+    border: 4px solid red;
+  };
+}
+
+.head{
+  position:absolute;
+  top:16.5%;
+  left:25%;
+  width:50%;
+  height:70%;
+  background:$koalaColor;
+  border-radius:50%;
+}
+
+.head-copy{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background:$koalaColor;
+  border-radius:50%;
+  z-index:2;
+}
+
+.ear-left{
+  position:absolute;
+  width:60%;
+  height:65%;
+  left:-20%;
+  top:5%;
+  background:$koalaColor;
+  border-radius:50%;
+  z-index:1;
+}
+
+.ear-right{
+  position:absolute;
+  width:60%;
+  height:65%;
+  right:-20%;
+  top:5%;
+  background:$koalaColor;
+  border-radius:50%;
+  z-index:1;
+}
+
+.inner-ear{
+  position:absolute;
+  border-radius:50%;
+  width:80%;
+  height:80%;
+  top:10%;
+  left:10%;
+  background:$earInnerColor;
+}
+
+.eye-left{
+  position:absolute;
+  background:white;
+  width:30%;
+  height:33%;
+  top:25%;
+  left:21%;
+  border-radius:50%;
+  z-index:3;
+}
+
+.eye-right{
+  position:absolute;
+  background:$eyeColor;
+  width:30%;
+  height:33%;
+  top:25%;
+  right:21%;
+  border-radius:50%;
+  z-index:3;
+}
+
+.pupil{
+ position:absolute;
+ width:28%;
+ height:30%;
+ top:35%;
+ left:36%;
+ border-radius:50%;
+ background:$pupilColor;
+}
+
+.nose{
+  position:absolute;
+  background:$noseColor;
+  width:25%;
+  height:42.5%;
+  left:37%;
+  top:45%;
+  border-radius:50px;
+  z-index:4;
+}
+
+.hair-left{
+  position:absolute;
+  top:-8%;
+  left:30%;
+  width:20%;
+  height:20%;
+  background:$koalaColor;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.hair-right{
+  position:absolute;
+  top:-4%;
+  left:48%;
+  width:20%;
+  height:20%;
+  background:$koalaColor;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
