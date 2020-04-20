@@ -1,0 +1,110 @@
+@import 'props';
+
+$batmanContainerTamanhaW:800px;
+$batmanContainerTamanhaH:400px;
+$bolaSuperioresMovimentoLateral:150px;
+$bolaSuperioresMovimentoVertical:-30px;
+
+body{
+    background-color:$bg-color;
+    color:$fontColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font: {
+            family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            size: 60px;
+            weight:800;
+        }
+    }
+}
+
+#batman-container{
+    width:$batmanContainerTamanhaW;
+    height: $batmanContainerTamanhaH;
+    position: relative;
+
+    animation: {
+        name: animate;
+        duration:4s;
+        iteration-count:infinite;
+    }
+
+    @keyframes animate {
+        0% {margin-top: 0;}
+        50% {margin-top: 50px;}
+        100%{margin-top: 0;}
+    }
+}
+
+#batman-base{
+    width: 712px;
+    height: 250px;
+    background-color: $fontHoverColor;
+    border-radius: 125px;
+    z-index: 10;
+    position: absolute;
+    top:$batmanContainerTamanhaW / 10;
+    left: $batmanContainerTamanhaH / 10;
+
+    &:hover{
+        background-color: #7424EF;
+    }
+}
+
+%bola{
+    background-color: $bg-color;
+    border-radius: 50%;
+    z-index: 20;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+}
+
+#bola1{
+    @extend %bola;
+    left: $bolaSuperioresMovimentoLateral;
+    top: $bolaSuperioresMovimentoVertical;
+}
+
+#bola2{
+    @extend %bola;
+    right: $bolaSuperioresMovimentoLateral;
+    top: $bolaSuperioresMovimentoVertical;
+}
+
+#bola4L{
+    @extend %bola;
+    bottom:$bolaSuperioresMovimentoVertical + 10px;
+    left: $bolaSuperioresMovimentoLateral - 50px;
+}
+
+#bola5L{
+    @extend %bola;
+    bottom:$bolaSuperioresMovimentoVertical - 10px;
+    left: $bolaSuperioresMovimentoLateral + 40px;
+}
+
+
+#bola6R{
+    @extend %bola;
+    bottom:$bolaSuperioresMovimentoVertical + 10px;
+    right: $bolaSuperioresMovimentoLateral - 50px;
+}
+
+#bola7R{
+    @extend %bola;
+    bottom:$bolaSuperioresMovimentoVertical - 10px ;
+    right: $bolaSuperioresMovimentoLateral + 40px;
+}
+
+#bola8C{
+    @extend %bola;
+    width: 100px;
+    height: 100px;
+    top: $bolaSuperioresMovimentoVertical * (-0.6);
+    left: $batmanContainerTamanhaW / 2 - 50px;
+}
