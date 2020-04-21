@@ -1,0 +1,199 @@
+$borderBox:false;
+$widthBox:400px;
+$heightBox:400px;
+
+$bgColor:#FF615E;
+$bgBrightColor:#FFA7A5;
+$labBgColor:#FFF;
+$liquidOxigene:#6E2D2C;
+
+body{
+  background-color:#FF615E;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:10%
+}
+
+.box{
+  width:$widthBox;
+  height:$heightBox;
+  position:relative;
+  @if($borderBox == true){
+    border:5px solid blue;
+  }
+}
+
+.border-turbo{
+  position:relative;
+  width:8%;
+  height:30%;
+  border-radius:30px;
+  transform:rotate(52deg);
+  top:4%;
+  left:17%;
+  background: {
+    color:$labBgColor;
+  }
+}
+
+.turbo{
+  position:absolute;
+  background: {
+    color:$labBgColor;
+  }
+  width:20%;
+  height:50%;
+  left:30%;
+  top:18%;
+  transform:rotate(-38deg);
+}
+
+.circule1{
+  position:absolute;
+  bottom:-6%;
+  right:4%;
+  width:57%;
+  height:24%;
+  border-width: 0 0 120px 0 ;
+  border-style:solid;
+  border-color:$bgColor;
+  border-radius:100% ; 
+  z-index:8;
+}
+
+.circule2{
+  position:absolute;
+  bottom:7%;
+  right:32.5%;
+  width:28.5%;
+  height:15%;
+  border-width: 60px 0 0 0 ;
+  border-style:solid;
+  border-color:$bgColor;
+  border-radius:100% ; 
+  z-index:7;
+}
+
+.circule3{
+      position:absolute;
+      bottom:9%;
+      right:4%;
+      width:28.5%;
+      height:15%;
+      border-width: 0 0 60px 0 ;
+      border-style:solid;
+      border-color:$bgBrightColor;
+      border-radius:100% ;
+      z-index:8;
+}
+
+.circule4{
+      position:absolute;
+      bottom:14%;
+      right:4%;
+      width:20%;
+      height:10%;
+      border-width: 30px 0 0 0 ;
+      border-style:solid;
+      border-color:$bgBrightColor;
+      border-radius:100% ; 
+      z-index:8;
+}
+
+.circule5{
+      position:absolute;
+      bottom:22.5%;
+      right:23.7%;
+      width:9%;
+      height:2%;
+      border-width: 0 0 10px 0 ;
+      border-style:solid;
+      border-color:$labBgColor;
+      border-radius:100% ; 
+      z-index:8;
+}
+
+.circules4{
+  position:relative;
+  width:100%;
+  height:100%;
+  z-index:20;
+  .cicle1{
+    position:absolute;
+    bottom:50%;
+    right:46%;
+    width:10%;
+    height:10%;
+    border-radius:50%;
+    background:$liquidOxigene;
+    z-index:20;
+  }
+    .cicle2{
+    position:absolute;
+    bottom:46%;
+    right:36%;
+    width:6%;
+    height:6%;
+    border-radius:50%;
+    background:$liquidOxigene;
+    z-index:20;
+  }
+  
+  .cicle3{
+    position:absolute;
+    bottom:34%;
+    right:48%;
+    width:4%;
+    height:4%;
+    border-radius:50%;
+    background:$liquidOxigene;
+    z-index:20;
+  }
+}
+
+.circule9{
+  width:55%;
+  height:55%;
+  position:absolute;
+  border-radius:50%;
+  background:$labBgColor;
+  top:45%;
+  left:35%;
+  border:20px solid $labBgColor;
+  z-index:5;
+}
+
+.shadowcircule{
+  position:absolute;
+  bottom:-15%;
+  right:2%;
+  width:80%;
+  height:20%;
+  background:$liquidOxigene;
+  border-radius:50%;
+  z-index:1;
+}
+
+.shadowturbo{
+  position:absolute;
+  bottom:-8%;
+  left:-20%;
+  width:50%;
+  height:10%;
+  background:$liquidOxigene;
+  z-index:1;
+  transform:skewX(-60deg)
+}
+
+.shadowborder{
+  position:absolute;
+  bottom:-10%;
+  left:-30.5%;
+  width:10%;
+  height:15%;
+  background:$liquidOxigene;
+  border-radius:18px;
+  z-index:1;
+  transform:skewX(-60deg)
+}

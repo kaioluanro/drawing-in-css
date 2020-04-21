@@ -19,3 +19,9 @@
 ## 02-Koala in CSS
 
 ![koala](./02-draw-koala/02-koala.png)
+
+#
+
+## 03-Lab
+
+![lab](./03-lab/03-lab.png)
